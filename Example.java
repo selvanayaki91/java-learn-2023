@@ -38,6 +38,12 @@ return x/y*z;
 }
 }
 
+
+
+
+
+
+
 output:
 selva@selva-Lenovo-Edge-15:~/Music/B29$ javac Example.java
 selva@selva-Lenovo-Edge-15:~/Music/B29$ java Example
