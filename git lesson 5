@@ -1,0 +1,41 @@
+#create a merge conflict resolve
+
+# create a directory
+  mkdir git-repo(test)
+  cd git-repo(test)
+
+#initialize git repository
+   git initialize(git init)
+
+git status
+
+#create a files
+touch my_code.sh
+git add . //(my_code.sh)
+echo "echo Hello" > my_code.sh
+git commit -am 'initial'
+
+just if you want tracking
+  put command //git log
+
+#create a new branch
+git checkout -b new-branch
+change to file content
+echo "echo \"Hello World\"" > my_code.sh
+git status "modified that file we can see"
+git commit -am 'first commit on new_branch'
+
+#move to master
+git checkout master
+echo "echo \"Hello World!\" > my_code.sh
+git add .
+git commit -am 'second commit on master'
+git branch
+git checkout master
+now go to change file content then save
+git status(on branch master)
+git add .
+git commit -m "First commit"
+git status
+
+git merge new_branch
